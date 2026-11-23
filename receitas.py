@@ -9,7 +9,7 @@ def quantidade_para(gramas_por_receita, receitas):
     """Gramas de um ingrediente para preparar várias receitas de uma vez."""
     if gramas_por_receita < 0 or receitas < 0:
         raise ValueError("A quantidade e o número de receitas não podem ser negativos.")
-    return gramas_por_receita * receitas
+    return gramas_por_receita + receitas
 
 
 def listar(pasta=PASTA):
